@@ -40,7 +40,9 @@
     <header class="flex-full flex-row header">
         <!-- ITEM LEFT -->
         <div class="flex-full flex-row">
-            <img class="header__logo header__logo--scroll" alt="Alttxt" src="https://via.placeholder.com/170x70">
+            <a href="#">
+                <img class="header__logo header__logo--scroll" alt="Sock Santa Sacramento Logo" src="./assets/images/logo_tagline.png">
+            </a>
         </div>
         <!-- ITEM LEFT END -->
 
@@ -48,9 +50,9 @@
         <div class="flex-full flex-row header-nav">
             <ul class="flex-full flex-row fs3 header-nav__list">
                 <!-- SCROLL LIST ITEM -->
-                <li data-name="scroll-to-ID" class="flex-full header-nav__scroll header-nav__li">Progress<span class="header-nav__li--underline"></span></li>
-                <li data-name="scroll-to-ID" class="flex-full header-nav__scroll header-nav__li">Why Help?<span class="header-nav__li--underline"></span></li>
-                <li data-name="scroll-to-ID" class="flex-full header-nav__scroll header-nav__li">How to Help<span class="header-nav__li--underline"></span></li>
+                <li data-name="progress" class="flex-full header-nav__scroll header-nav__li">Progress<span class="header-nav__li--underline"></span></li>
+                <li data-name="why" class="flex-full header-nav__scroll header-nav__li">Why Help?<span class="header-nav__li--underline"></span></li>
+                <li data-name="how" class="flex-full header-nav__scroll header-nav__li">How to Help<span class="header-nav__li--underline"></span></li>
                 <!-- BUTTON LIST ITEM -->
                 <a class="flex-full header-nav__li" href="http://google.com">
                     <li class="flex-full">About<span class="header-nav__li--underline"></span></li>
@@ -76,7 +78,7 @@
         <ul class="flex-full flex-col header-hamburger__list">
             <li>Home</li>
             <li data-name="scroll-to-ID" class="header-nav__scroll">Progress</li>
-            <li data-name="scroll-to-ID" class="header-nav__scroll">Why Help?</li>
+            <li data-name="why" class="header-nav__scroll">Why Help?</li>
             <li data-name="scroll-to-ID" class="header-nav__scroll">How to Help</li>
             <a href="http://google.com">
                 <li class="flex-full header-nav__li">About</li>
@@ -93,7 +95,7 @@
     <div class="clippy"></div>
 
     <!-- ========================== PROGRESS START ========================== -->
-    <section class="flex-full flex-row inner-wrapper progress">
+    <section id="progress" class="flex-full flex-row inner-wrapper progress">
         <!-- LEFT BLOCK -->
         <div class="flex-full flex-col progress__left">
             <h1 class="flex-full progress__left--headline">
@@ -106,7 +108,7 @@
                 Be a part of something.
             </div>
             <div class="flex-full progress__left--button-container">
-                <a class="cta-button">HOW TO HELP</a>
+                <a class="cta-button">DONATE SOCKS</a>
             </div>
         </div>
 
@@ -123,10 +125,10 @@
                 <div class="flex-full progress__right__glass--mid--tick tick3"></div>
                 <div class="flex-full progress__right__glass--mid--tick tick4"></div>
                 <div class="flex-full progress__right__glass--mid--tick tick5"></div>
-                <div class="flex-full progress__right__glass--mid__goal"><img src="./assets/images/goal.svg" alt="500 Pair Goal" height="16px"></div>
+                <div class="flex-full progress__right__glass--mid__goal"><img src="./assets/images/goal.svg" alt="500 Pair Goal" width="36px"></div>
             </div>
             <div class="flex-full progress__right__glass--bottom">
-                <img src="./assets/images/juice-bottom.svg" alt="Bar bottom" width="125.5px">
+                <img src="./assets/images/juice-bottom-2.svg" alt="Bar bottom" width="126px">
             </div>
             <div class="flex-full flex-row progress__right__counter-container">
                 <div class="flex-full progress__right__counter counter1">0</div>
@@ -142,7 +144,7 @@
 
 
     <!-- ========================== WHY START ========================== -->
-    <section class="flex-full flex-row inner-wrapper why">
+    <section id="why" class="flex-full flex-row inner-wrapper why">
         <div class="flex-full why-hero__container">
             <img class="why-hero" src="https://via.placeholder.com/500x500" alt="Homeless help">
         </div>
@@ -158,7 +160,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ea quia, similique dolore incidunt animi minus plus a few more more words.
             </div>
 
-            <a class="flex-full cta-button cta-button--margin-top">
+            <a data-name="how" class="flex-full cta-button cta-button--margin-top header-nav__scroll">
                 HOW TO HELP
             </a>
         </div>
@@ -170,7 +172,7 @@
     <section class="flex-full flex-row how">
         <div class="how-clip"></div>
 
-        <div class="flex-full flex-row inner-wrapper how__container">
+        <div id="how" class="flex-full flex-row inner-wrapper how__container">
             <div class="flex-full flex-col how-text__container">
                 <h2 class="flex-full how-text__headline">
                     Placeholder Text Socks
@@ -182,16 +184,14 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ea quia, similique dolore incidunt animi minus plus a few more more words.
                 </div>
     
-                <a class="flex-full cta-button cta-button--margin-top">
-                    HOW TO HELP
-                </a>
+                <a class="flex-full cta-button cta-button--margin-top">DONATE SOCKS</a>
             </div>
 
             <div class="flex-full how-hero__container">
                 <img class="how-hero" src="https://via.placeholder.com/500x500" alt="Homeless help">
             </div>
 
-            <div class="how__line"></div>
+            <!-- <div class="how__line"></div> -->
         </div>
 
     </section>
@@ -202,11 +202,26 @@
     <footer class="flex-full footer">
         <div class="flex-full flex-row inner-wrapper footer__container">
             <div class="flex-full flex-col footer-left">
-
+                <ul class="flex-full flex-col footer-left__list">
+                    <li class="footer__list--headline">Sock Santa</li>
+                    <li data-name="progress" class="footer__list__item header-nav__scroll">Progress</li>
+                    <li data-name="why" class="footer__list__item header-nav__scroll">Why Help?</li>
+                    <li data-name="how" class="footer__list__item header-nav__scroll">How to Help</li>
+                    <a href="#"><li class="footer__list__item">About</li></a>
+                    <li class="flex-full cta-button">Donate Socks</li>
+                </ul>
             </div>
 
             <div class="flex-full flex-col footer-right">
-
+                <ul class="flex-full flex-col footer-right__list">
+                    <li class="footer__list--headline">Send Socks To:</li>
+                    <li class="footer__list__item">Sock Santa</li>
+                    <li class="footer__list__item">1234 Thisword Road</li>
+                    <li class="footer__list__item">P.O. Box 12345</li>
+                    <li class="footer__list__item">Sacramento, CA 95831</li>
+                    <li class="footer__list__item footer__list__item--bold">New or Gently Used Socks</li>
+                    <li class="footer__list__tagline">Include your email if you'd like<br>Sock Santa progress updates!</li>
+                </ul>
             </div>
         </div>
     </footer>

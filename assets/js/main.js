@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     $(".header-nav__scroll").on("click", function () {
         var data = $(this).attr("data-name");
-        $('html,body').animate({ scrollTop: $(`#${data}`).offset().top - 55 }, 400);
+        $('html,body').animate({ scrollTop: $(`#${data}`).offset().top - 50}, 400);
     });
 
     // HAMBURGER
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     // METER
 
-    var socks = 77;
+    var socks = 11;
     var goal = 100;
     var percent = (socks / goal) * 100;
 
