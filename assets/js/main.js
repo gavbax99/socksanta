@@ -17,12 +17,14 @@ $(document).ready(function() {
         $(this).toggleClass("hamburger-change");
         $(".header-hamburger-nav").toggleClass("header-hamburger-nav--show");
         $(".header-hamburger__blackout").toggleClass("header-hamburger__blackout--show")
+        $("body").toggleClass("noscroll");
     });
 
     $(".header-nav__scroll").on("click", function () {
         $(".header-hamburger").removeClass("hamburger-change");
         $(".header-hamburger-nav").removeClass("header-hamburger-nav--show");
-        $(".header-hamburger__blackout").removeClass("header-hamburger__blackout--show")
+        $(".header-hamburger__blackout").removeClass("header-hamburger__blackout--show");
+        $("body").removeClass("noscroll");
     });
 
     $(".header-hamburger--expand").on("click", function () {

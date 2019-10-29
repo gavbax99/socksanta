@@ -2,19 +2,6 @@
 /* @@@@@@@@@@@@@@@@@@   UPDATED: 4/8/2019   @@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-/* ******************   TABLE OF CONTENTS   ****************** */
-/* *********************************************************** *\
-
-xi. RESET
-xii. TOOLS
-
-1. SETUP
-2. HEADER
-3. ...
-X. FOOTER
-Y. OVERRIDES
-Z. MEDIA QUERIES
-
 /* xi. **************         RESET         ****************** */
 /* *********************************************************** */
 
@@ -148,8 +135,8 @@ body {background-color: #fff;
     justify-content: space-between;
     top: 0;
     left: 0;
-    /* padding: 0 30px; */
     width: 85%;
+    max-width: 1620px;
     height: 95px;
     color: #000;
     margin: 0 auto;
@@ -250,7 +237,7 @@ body {background-color: #fff;
 .header-hamburger__bar1, .header-hamburger__bar2, .header-hamburger__bar3 {
     width: 30px;
     height: 3px;
-    background-color: #f7f7f7;
+    background-color: red;
     margin: 5px 0;
     transition: 0.4s;
     border-radius: 50px;
@@ -278,36 +265,43 @@ body {background-color: #fff;
     position: absolute;
     align-items: flex-start;
     left: 0;
-    top: 58px;
-    padding: 8px 30px;
+    top: -30px;
+    padding: 100px 0px 8px;
     width: 100%;
-    color: #fff;
-    background-color: red;
+    color: #000;
+    background-color: #fff;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     opacity: 0;
     visibility: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
     transition: .4s;
     z-index: 998;
 }
 
 .header-hamburger-nav--show {
-    top: 69px;
+    top: 0px;
     visibility: visible;
     opacity: 1;
 }
 
 .header-hamburger__list {
     align-items: flex-start;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
+    padding-left: 20px;
 }
 
 .header-hamburger__list li {
     padding: 10px 0;
     width: 100%;
     cursor: pointer;
+}
+
+.header-nav__hamburger--a {
+    width: 100%;
 }
 
 .header-hamburger__list__nested {
@@ -345,7 +339,7 @@ body {background-color: #fff;
     left: 0; 
     width: 100vw; 
     height: 100vh; 
-    background-color: rgba(20,20,20,.4); 
+    background-color: rgba(20,20,20,.2); 
     z-index: 900;
     transition: .4s;
     opacity: 0;
@@ -367,6 +361,46 @@ body {background-color: #fff;
     background-color: rgb(233, 251, 255);
     top: 0;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+}
+
+.clippy__bottom {
+    position: absolute;
+    width: 100%;
+    height: 505px;
+    background-color: #fff;
+    bottom: 0;
+    clip-path: polygon(0 93%, 100% 20%, 100% 99%, 0% 100%);
+    z-index: -1;
+}
+
+.footer-blue-background {
+    position: absolute; 
+    background-color: rgb(233, 251, 255);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.clippy-nh {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(233, 251, 255);
+    top: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+    z-index: -1;
+}
+
+.clippy-nh__bottom {
+    position: absolute;
+    width: 100%;
+    height: 349px;
+    background-color: rgb(233, 251, 255);
+    bottom: 0;
+    clip-path: polygon(0 92%, 100% 20%, 100% 99%, 0% 100%);
+    z-index: -1;
 }
 
 /* X. **************         PROGRESS         **************** */
@@ -436,7 +470,7 @@ body {background-color: #fff;
     background-color: #cecece;
     border-left: 8px solid #757575;
     border-right: 8px solid #757575;
-    z-index: 999;
+    z-index: 500;
 }
 
 .progress__right__glass--mid__juice--top {
@@ -571,6 +605,7 @@ body {background-color: #fff;
     margin-top: 375px;
     justify-content: space-between;
     background-color: rgb(233, 251, 255);
+    z-index: -3;
 }
 
 .how-clip {
@@ -606,28 +641,19 @@ body {background-color: #fff;
     margin-left: 4rem;
 }
 
-/* .how__line {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -150px;
-    left: 0;
-    border-radius: 10px;
-    background-color: #fff;
-} */
-
-
 /* X. **************         FOOTER         ****************** */
 /* *********************************************************** */
 
 .footer {
-    border-top: 1rem solid red;
     position: relative;
     bottom: 40px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    background-image: url("../images/sock-pattern.png");
-    background-repeat: repeat;
+}
+
+.footer-nh {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
 }
 
 .footer__container {
@@ -699,11 +725,110 @@ body {background-color: #fff;
     padding: .75rem 2rem;
 }
 
+/* Y. ***************       NH STYLES       ****************** */
+/* *********************************************************** */
+
+.nh-wrapper {
+    min-height: calc(100vh - 459px);
+    padding-bottom: 60px;
+}
+
+.nh-headline {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.nh-headline-2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: red;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.nh-container {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.nh-left {
+    width: 100%;
+}
+
+.nh-left__headline {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.nh-left__paragraph {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nh-left__tagline {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+}
+
+.nh-left__button-container {
+    margin-top: 1rem;
+}
+
+.nh-right {
+    margin-left: 80px;
+    min-width: 345px;
+}
+
+.nh-right__donate {
+    margin-left: 20px;
+    max-width: 500px;
+    min-width: 500px;
+    width: 100%;
+}
+
+.nh-hero {
+    width: 100%;
+}
 
 /* Y. ***************       OVERRIDES       ****************** */
 /* *********************************************************** */
 
 .hider {display: none !important;}
+
+.noscroll {overflow: hidden !important;}
+
+.active-page {
+    color: red;
+    font-weight: 700;
+}
+
+.text-center {text-align: center}
+.uppercase {text-transform: uppercase}
+.fw-300 {font-weight: 300}
+.fw-400 {font-weight: 400}
+.fw-500 {font-weight: 500}
+.fw-600 {font-weight: 600}
+.fw-700 {font-weight: 700}
+.fw-800 {font-weight: 800}
+.fw-900 {font-weight: 900}
 
 /* Z. ***************     MEDIA QUERIES     ****************** */
 /* *********************************************************** */
@@ -750,12 +875,21 @@ body {background-color: #fff;
     .header-hamburger-nav--show {
         display: none !important;
     }
+
+    .noscroll {
+        overflow: auto !important;
+    }
 }
 
 @media only screen and (max-width: 992px) { 
     /* M QUERIES (992) */
     .header {
         padding: 0 10px 0 20px;
+        width: 95%;
+    }
+
+    .header-hamburger__list {
+        width: 95%;
     }
 
     .header-nav {
