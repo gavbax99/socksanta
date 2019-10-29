@@ -39,7 +39,7 @@ $(document).ready(function() {
     var percent = (socks / goal) * 100;
 
     $(".progress__right__glass--mid__juice").css("height", `${percent.toFixed(2)}%`)
-    $(".progress__right__glass--mid__juice--top").css("bottom", `calc(${percent.toFixed(2)}% - 1px)`)
+    $(".progress__right__glass--mid__juice--top").css("bottom", `${percent.toFixed(2)}%`)
 
     var count = socks.toString().split("");
 
