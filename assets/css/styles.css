@@ -102,7 +102,7 @@ h4{font-size:18px;}
 body {background-color: #fff;
     font-size: 12px;
     color: rgb(24, 24, 24);
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .inner-wrapper {
@@ -369,7 +369,7 @@ body {background-color: #fff;
     height: 505px;
     background-color: #fff;
     bottom: 0;
-    clip-path: polygon(0 93%, 100% 20%, 100% 99%, 0% 100%);
+    clip-path: polygon(0 93%, 100% 20%, 100% 100%, 0% 100%);
     z-index: -1;
 }
 
@@ -399,7 +399,7 @@ body {background-color: #fff;
     height: 349px;
     background-color: rgb(233, 251, 255);
     bottom: 0;
-    clip-path: polygon(0 92%, 100% 20%, 100% 99%, 0% 100%);
+    clip-path: polygon(0 92%, 100% 20%, 100% 100%, 0% 100%);
     z-index: -1;
 }
 
@@ -571,7 +571,10 @@ body {background-color: #fff;
 }
 
 .why-hero, .how-hero {
+    max-width: 500px;
     width: 100%;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+    border-radius: 8px;
 }
 
 .why-text__container, .how-text__container {
@@ -737,20 +740,22 @@ body {background-color: #fff;
     width: 100%;
     text-align: center;
     font-size: 3.5rem;
-    font-weight: 600;
-    font-family: sans-serif;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
     margin-top: 60px;
     margin-bottom: 100px;
+}
+
+.nh-headline__donate {
+    margin-bottom: 50px;
 }
 
 .nh-headline-2 {
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: red;
-    margin-top: 80px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
     margin-bottom: 40px;
 }
 
@@ -788,6 +793,13 @@ body {background-color: #fff;
     text-align: center;
 }
 
+.nh-gavin {
+    width: 100%;
+    padding-top: 1.25rem;
+    font-size: .75rem;
+    text-align: center;
+}
+
 .nh-left__button-container {
     margin-top: 1rem;
 }
@@ -806,6 +818,61 @@ body {background-color: #fff;
 
 .nh-hero {
     width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+}
+
+/* DONATIONS */
+
+.nh-donation-options {
+    width: 100%;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nh-donation-options__left, .nh-donation-options__right {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.1);
+    border: 1px solid rgb(235, 235, 235);
+    padding-bottom: 1.5rem;
+}
+
+.nh-donation-options__title {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nh-donation-options__paragraph {
+    width: 100%;
+    text-align: center;
+    padding: .5rem 3rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.nh-donation-options__title-number {
+    padding: 1rem 0 1rem 2.5rem;
+    font-size: 3.5rem;
+    color: red;
+    font-weight: 700;
+}
+
+.nh-donation-options__title-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.nh-donation-options__title-text--small {
+    font-size: .75rem;
+    padding-top: .25rem;
+    font-style: italic;
+    color: red;
 }
 
 /* Y. ***************       OVERRIDES       ****************** */
