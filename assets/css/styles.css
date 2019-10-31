@@ -598,6 +598,18 @@ body {background-color: #fff;
     text-align: center;
 }
 
+.why-link {
+    display: inline;
+    color: red;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.why-link:visited {
+    color: red;
+    text-decoration: underline;
+}
+
 /* X. **************         HOW            ****************** */
 /* *********************************************************** */
 
@@ -605,7 +617,7 @@ body {background-color: #fff;
     position: relative;
     width: 100%;
     align-items: center;
-    margin-top: 375px;
+    margin-top: 310px;
     justify-content: space-between;
     background-color: rgb(233, 251, 255);
     z-index: -3;
@@ -624,7 +636,7 @@ body {background-color: #fff;
 
 .how__container {
     position: relative;
-    bottom: 12rem;
+    bottom: 6rem;
 }
 
 .how-text__container {
@@ -649,7 +661,7 @@ body {background-color: #fff;
 
 .footer {
     position: relative;
-    bottom: 40px;
+    bottom: 10px;
     width: 100%;
 }
 
@@ -753,6 +765,7 @@ body {background-color: #fff;
 .nh-headline-2 {
     width: 100%;
     text-align: center;
+    color: red;
     font-size: 2rem;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
@@ -774,6 +787,7 @@ body {background-color: #fff;
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
+    color: red;
 }
 
 .nh-left__paragraph {
@@ -826,7 +840,7 @@ body {background-color: #fff;
 
 .nh-donation-options {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -835,9 +849,10 @@ body {background-color: #fff;
     width: 48%;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.1);
-    border: 1px solid rgb(235, 235, 235);
-    padding-bottom: 1.5rem;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.05);
+    border: 1px solid rgb(233, 251, 255);
+    /* border: 1px solid rgb(235, 235, 235); */
+    padding-bottom: 1rem;
 }
 
 .nh-donation-options__title {
@@ -848,7 +863,7 @@ body {background-color: #fff;
 .nh-donation-options__paragraph {
     width: 100%;
     text-align: center;
-    padding: .5rem 3rem;
+    padding: .5rem 1.5rem;
     line-height: 1.5rem;
     font-size: 1rem;
 }
@@ -873,6 +888,89 @@ body {background-color: #fff;
     padding-top: .25rem;
     font-style: italic;
     color: red;
+}
+
+.nh-donation-paragraph--name {
+    color: red;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nh-donation-paragraph--large {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-bottom: 60px;
+}
+
+.nh-donation-options__amazon-container {
+    width: 100%;
+    padding: .5rem 1.5rem;
+}
+
+.nh-donation-options__amazon {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid rgb(233, 251, 255);
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.nh-donation-options__amazon--image {
+    border-radius: 3px 0 0 3px;
+    border-right: 1px solid rgb(233, 251, 255);
+}
+
+.nh-donation-options__amazon--text {
+    width: 100%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .9rem;
+    padding: 0 1rem;
+}
+
+.nh-donation-options__amazon--price {
+    padding: 0 1rem 0 0;
+    color: red;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nh-donation-image--bottom {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    background-image: url("../images/socks-donate-c.jpg");
+    background-size: cover;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+}
+
+.nh-wrapper--nopadding {
+    padding-bottom: 0;
+}
+
+.nh-donation-options__list {
+    width: 100%;
+    text-align: center;
+    padding: .5rem 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.nh-donation-options__list li {
+    padding-bottom: .24rem;
+}
+
+.nh-donation-options__list i {
+    color: red;
+}
+
+.nh-donation-options__list-title {
+    font-weight: 700;
+    color: red;
+    padding-bottom: .25rem !important;
 }
 
 /* Y. ***************       OVERRIDES       ****************** */
@@ -927,6 +1025,16 @@ body {background-color: #fff;
     .footer-left__list .footer__list__item:hover {
         color: red;
     }
+
+    
+    .why-link:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .nh-donation-options__amazon:hover {
+        background-color: rgb(233, 251, 255);
+    }
 }
 
 @media only screen and (max-width: 1220px) { 
@@ -966,10 +1074,184 @@ body {background-color: #fff;
     .header-hamburger {
         display: block;
     }
+
+    .inner-wrapper {
+        width: 90%;
+    }
+
+    .progress__left--headline {
+        font-size: 2.5rem;
+    }
+
+    .progress__right {
+        max-width: 200px;
+        margin-left: 2rem;
+    }
+
+    .why-hero__container {
+        margin-right: 2rem;
+    }
+
+    .how-hero__container {
+        margin-left: 2rem;
+    }
+
+    .nh-right {
+        margin-left: 2rem;
+        min-width: 280px;
+    }
 }
 
-@media only screen and (max-width: 768px) { 
-    /* S QUERIES (768) */
+@media only screen and (max-width: 700px) { 
+    /* S QUERIES (700) */
+
+    .progress {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .progress__left--paragraph {
+        margin-top: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding: 0 .75rem;
+    }
+
+    .progress__right {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 3.5rem;
+    }
+
+    .why {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .why-text__container {
+        width: 100%;
+    }
+
+    .why-text__paragraph {
+        padding: 0 .75rem;
+        margin-top: 1.5rem;
+    }
+
+    .why-hero__container {
+        margin-right: 0;
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+
+    .why-hero {
+        width: 90%;
+    }
+
+    .how {
+        margin-top: 125px;
+    }
+
+    .how__container {
+        flex-direction: column;
+        bottom: 5rem;
+    }
+
+    .how-text__container {
+        width: 100%;
+    }
+
+    .how-text__paragraph {
+        padding: 0 .75rem;
+        margin-top: 1.5rem;
+    }
+
+    .how-hero__container {
+        margin-left: 0;
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+
+    .how-hero {
+        width: 90%;
+    }
+
+    .footer__container {
+        padding: 2rem .75rem;
+        flex-direction: column;
+    }
+
+    .footer-right__list {
+        text-align: left;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .nh-container {
+        flex-direction: column;
+    }
+
+    .nh-headline {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .nh-left__headline {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .nh-left__paragraph {
+        padding: 0 .75rem;
+    }
+
+    .nh-right {
+        margin-left: 0;
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+
+    .nh-hero {
+        width: 90%;
+    }
+
+    .nh-donation-options {
+        flex-direction: column;
+    }
+
+    .nh-donation-options__left, .nh-donation-options__right {
+        width: 100%;
+    }
+
+    .nh-donation-options__right {
+        margin-top: 1.5rem;
+    }
+
+    .nh-donation-options__title-number {
+        padding: 1rem 0 .5rem 1.5rem;
+    }
+
+    .nh-donation-options__title-text {
+        font-size: 1.25rem;
+    }
+
+    .nh-donation-paragraph--name {
+        font-size: 1.5rem;
+    }
+
+    .nh-donation-paragraph--large {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .nh-donation-options__amazon--text {
+        padding: 0 0.5rem;
+    }
+
+    .nh-donation-options__amazon--price {
+        padding: 0 .5rem 0 0;
+    }
 }
 
 @media only screen and (max-width: 576px) { 

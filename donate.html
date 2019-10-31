@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <!-- Meta setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,9 @@
 
     <!-- Page information -->
     <title>Sacramento Sock Santa</title>
-    <meta name="description" content="EXAMPLE | © ALL RIGHTS RESERVED">
+    <meta name="description" content="Raising socks for the homless in the Sacramento area - Holiday season 2019">
     <meta name="author" content="Gavin Baxter, Full Stack Web Developer | www.gavinbaxter.com">
-    <meta name="copyright" content="Copyright owner" />
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <link rel="canonical" href="{{pageUrl}}" />
-    <link rel="shortcut icon" href="https://traveltables.com/favicon-32x32.png" />
-
-    <!-- Twitter and Facebook sharing tags -->
-    <meta property="og:title" content="European Travel Destinations">
-    <meta property="og:description" content="Offering tour packages for individuals or groups.">
-    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
-    <meta property="og:url" content="http://euro-travel-example.com/index.htm">
-    <meta property="og:site_name" content="European Travel, Inc.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="Alt text for image">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
 
     <!-- Style links -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -104,7 +93,7 @@
     <div class="clippy-nh"></div>
 
 
-    <div class="nh-wrapper inner-wrapper">
+    <div class="nh-wrapper nh-wrapper--nopadding inner-wrapper">
 
         <div class="flex-full nh-headline nh-headline__donate">Donate</div>
 
@@ -123,6 +112,23 @@
                 <div class="flex-full flex-col nh-donation-options__paragraph">
                     The best way to donate is to send in an unopened pack of socks. Need some inspiration? Here are some cost-effective options from Amazon.com:
                 </div>
+
+                <a class="flex-full nh-donation-options__amazon-container" href="https://www.amazon.com/No-Nonsense-Mens-Cushion-Socks/dp/B06XTZWNXV?th=1&psc=1" target="_blank">
+                    <div class="flex-full flex-row nh-donation-options__amazon">
+                        <img class="nh-donation-options__amazon--image" src="./assets/images/amazon-1.jpg">
+                        <p class="flex-full nh-donation-options__amazon--text">No Nonsense Cusion - 3 Pack</p>
+                        <p class="flex-full nh-donation-options__amazon--price">$6.29</p>
+                    </div>
+                </a>
+
+                <a class="flex-full nh-donation-options__amazon-container" href="https://www.amazon.com/Gildan-Polyester-Cushion-Socks-12-Pack/dp/B07DDSB61V/ref=sr_1_56?dchild=1&keywords=socks+bulk&psc=1&qid=1571276867&s=apparel&sr=1-56" target="_blank">
+                    <div class="flex-full flex-row nh-donation-options__amazon">
+                        <img class="nh-donation-options__amazon--image" src="./assets/images/amazon-2.jpg">
+                        <p class="flex-full nh-donation-options__amazon--text">Gildan Half Cusion - 12 Pack</p>
+                        <p class="flex-full nh-donation-options__amazon--price">$14.00</p>
+                    </div>
+                </a>
+
             </div>
 
             <div class="flex-full flex-col nh-donation-options__right">
@@ -137,28 +143,35 @@
                 <div class="flex-full flex-col nh-donation-options__paragraph">
                     Have a few extra pairs of gently used socks laying around? Send them in to Sock Santa to help those in need of warmth and comfort this holiday season!
                 </div>
+
+                <ul class="flex-full flex-col nh-donation-options__list">
+                    <li class="nh-donation-options__list-title">Used Sock Checklist:</li>
+                    <li><i class="fas fa-socks"></i>&nbsp; No holes or tears</li>
+                    <li><i class="fas fa-socks"></i>&nbsp; Be a matching pair</li>
+                    <li><i class="fas fa-socks"></i>&nbsp; Any material and length</li>
+                    <li><i class="fas fa-socks"></i>&nbsp; Must be washed!</li>
+                </ul>
             </div>
         </section>
 
         <section class="flex-full flex-row nh-container">
             <div class="flex-full flex-col nh-left">
-                <div class="nh-left__headline">Where to Send</div>
+                <div class="nh-left__headline">Sock Shipping Address:</div>
 
-                <p class="nh-left__paragraph">
-                    Gladly accepting new and gently used socks. Please see the donation options below.</p>
-
-                <p class="nh-left__paragraph">
-                    <span class="fw-800" style="color: red;">Gavin Baxter</span><br>
-                    1234 Fake Street<br>
-                    P.O. Box 20012<br>
+                <p class="nh-left__paragraph nh-donation-paragraph--large">
+                    <span class="nh-donation-paragraph--name">Gavin Baxter</span><br>
+                    2121 Natomas Crossing Dr.<br>
+                    Suite 200<br>
                     Sacramento, CA 95831<br>
                 </p>
             </div>
 
-            <div class="flex-full nh-right">
+            <!-- <div class="flex-full nh-right">
                 <img class="nh-hero" src="./assets/images/donate-socks.jpg" alt="Homeless help">
-            </div>
+            </div> -->
         </section>
+
+        <div class="nh-donation-image--bottom"></div>
 
 
 
@@ -185,10 +198,10 @@
             <div class="flex-full flex-col footer-right">
                 <ul class="flex-full flex-col footer-right__list">
                     <li class="footer__list--headline">Send Socks To:</li>
-                    <li class="footer__list__item">Gavin Baxter</li>
-                    <li class="footer__list__item">1234 Thisword Road</li>
-                    <li class="footer__list__item">P.O. Box 12345</li>
-                    <li class="footer__list__item">Sacramento, CA 95831</li>
+                    <li class="footer__list__item fw-700">Gavin Baxter</li>
+                    <li class="footer__list__item">2121 Natomas Crossing Dr.</li>
+                    <li class="footer__list__item">Suite 200</li>
+                    <li class="footer__list__item">Sacramento, CA 95834</li>
                     <li class="footer__list__item footer__list__item--bold">New or Gently Used Socks</li>
                     <li class="footer__list__tagline">Include your email if you'd like<br>Sock Santa progress updates!</li>
                 </ul>
